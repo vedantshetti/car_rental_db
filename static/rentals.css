@@ -1,0 +1,107 @@
+/* Overall container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.rental-form .form-group {
+    margin-bottom: 15px;
+}
+
+.rental-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rental-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.submit-button {
+    grid-column: span 2; /* Make button span two columns */
+    padding: 10px;
+    background-color: #164a8e; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.submit-button:hover {
+    background-color: #0f86ad; /* Darker green on hover */
+}
+
+/* Table styling */
+.rentals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.rentals-table th, .rentals-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.rentals-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.rentals-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.rentals-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table responsiveness */
+@media screen and (max-width: 768px) {
+    .rentals-table thead {
+        display: none;
+    }
+    
+    .rentals-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .rentals-table td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .rentals-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

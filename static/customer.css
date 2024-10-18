@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    margin: 0; 
+    padding: 20px; 
+    color: #333; /* Dark text */
+}
+
+.container {
+    max-width: 800px; /* Responsive container width */
+    margin: auto; /* Center the container */
+    background: #fff; /* White background for the content area */
+    padding: 20px; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    text-align: center; 
+    color: #000000; /* Black color for the title */
+    margin-bottom: 20px; 
+    font-size: 2.5em; 
+}
+
+h2 {
+    margin-top: 20px; /* Space above sections */
+    margin-bottom: 10px; /* Space below */
+    color: #333; /* Dark text for subtitles */
+    font-size: 1.8em; 
+}
+
+.form-group, .form-group1 {
+    margin-bottom: 15px; /* Space between form groups */
+    flex: 1;
+    margin-right: 10px; /* Add right margin for spacing */
+}
+
+.form-group:last-child, .form-group1:last-of-type {
+    margin-right: 0; /* Remove margin for last element */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Slightly lighter text */
+}
+
+input[type="text"], input[type="email"], input, textarea, select {
+    width: calc(100% - 20px); 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: border-color 0.3s; 
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; 
+}
+
+textarea {
+    resize: none; /* Disable resizing */
+    height: 40px; /* Set a fixed height for the textarea */
+    padding: 5px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+}
+
+
+.submit-button:hover, .delete-button:hover {
+    background-color: #0f86ad; /* Darker blue on hover */
+}
+
+/* Table Styles */
+.customers-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+.customers-table th, .customers-table td {
+    padding: 12px; 
+    text-align: left; 
+    border: 1px solid #ddd; 
+}
+
+.customers-table th {
+    background-color: #a9a7a7; /* Header background color */
+    color: #000000; /* Black text */
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
+
+.customers-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row color */
+}
+
+.customers-table tr:hover {
+    background-color: #e2e6ea; /* Row hover color */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.form-group:nth-child(2) {
+    margin-left: 10px; /* Spacing between first and last name */
+}
+
+.form-group1 {
+    margin-left: 0px; /* Adjust margin for specific form group */
+}
